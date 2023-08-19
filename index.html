@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry genius</title>
+</head>
+
+<body>
+    <main>
+    <section class="flex flex-col lg:flex-row justify-between">
+        
+        <div class="p-5">
+            <div>
+                <img src="./images/triangle.png" alt="">
+            </div>
+            <h1 class="text-3xl text-center">Triangle</h1>
+            <p class="text-center">Area (A) =0.5*b*h</p>
+            
+            <div class="mx-auto text-center">
+                <div class="inline">
+                    <input id="triangle-base" type="text" placeholder="b" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+                <div class="inline">
+                    <input id="triangle-height" type="text" placeholder="h" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+            </div>
+            <p aria-colcount="text-2xl text-center">Area:<span id="triangle-areadisplay">-----</span>cm<sup>2</sup></p>
+            <button onclick="calculateARea()" class="button block bg-[green] w-[100%] py-4 rounded-lg mt-2">calculate</button>
+        </div>
+
+        <div class="p-5">
+            <div>
+                <img src="./images/rectangle.png" alt="">
+            </div>
+            <h1 class="text-3xl text-center">Rectangle</h1>
+            <p class="text-center">Area (A) = w*I</p>
+            <div class="mx-auto text-center">
+                <div class="inline">
+                    <input id="rectangle-base" type="text" placeholder="b" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+                <div class="inline">
+                    <input id="rectangle-height" type="text" placeholder="h" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+            </div>
+            <p aria-colcount="text-2xl text-center">Area:<span id="rectangle-areadisplay">-----</span>cm<sup>2</sup></p>
+
+            <button onclick="calculateARea()" class="button block bg-[green] w-[100%] py-4 rounded-lg mt-2">calculate</button>
+        </div>
+
+        <div class="p-5">
+            <div>
+                <img src="./images/parallelogram.png" alt="">
+            </div>
+            <h1 class="text-3xl text-center">Parallelogram</h1>
+            <p class="text-center">b=10cm, h=12cm</p>
+            <div class="mx-auto text-center">
+                <div class="inline">
+                    <input type="text" placeholder="b" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+                <div class="inline">
+                    <input type="text" placeholder="h" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+            </div>
+            <button class="button block bg-[green] w-[100%] py-4 rounded-lg mt-2">Calculate</button>
+        </div>
+
+    </section>
+
+    <section class="flex flex-col lg:flex-row justify-between">
+        
+        <div class="p-5">
+            <div>
+                <img src="./images/rhombus.png" alt="">
+            </div>
+            <h1 class="text-3xl text-center">Rhombus</h1>
+            <p class="text-center">Area (A) =0.5*b*h</p>
+            <div class="mx-auto text-center">
+                <div class="inline">
+                    <input type="text" placeholder="b" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+                <div class="inline">
+                    <input type="text" placeholder="h" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+            </div>
+            <button class="button block bg-[green] w-[100%] py-4 rounded-lg mt-2">rectangle</button>
+        </div>
+
+        <div class="p-5">
+            <div>
+                <img src="./images/rectangle.png" alt="">
+            </div>
+            <h1 class="text-3xl text-center">Rectangle</h1>
+            <p class="text-center">Area (A) = w*I</p>
+            <div class="mx-auto text-center">
+                <div class="inline">
+                    <input type="text" placeholder="b" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+                <div class="inline">
+                    <input type="text" placeholder="h" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+            </div>
+            <button class="button block bg-[green] w-[100%] py-4 rounded-lg mt-2">rectangle</button>
+        </div>
+
+        <div class="p-5">
+            <div>
+                <img src="./images/parallelogram.png" alt="">
+            </div>
+            <h1 class="text-3xl text-center">Parallelogram</h1>
+            <p class="text-center">b=10cm, h=12cm</p>
+            <div class="mx-auto text-center">
+                <div class="inline">
+                    <input type="text" placeholder="b" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+                <div class="inline">
+                    <input type="text" placeholder="h" class="inline w-[60px] border-2 border-black">
+                    <p class="inline">cm</p>
+                </div>
+            </div>
+            <button class="button block bg-[green] w-[100%] py-4 rounded-lg mt-2">Calculate</button>
+        </div>
+
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
