@@ -15,7 +15,7 @@ function takeAndPush(push, take){
 
 // calculate triangle are:
 
-function calculateARea(){
+function triangleCalculateARea(){
    const triangleBase = getValueFromInputField('triangle-base');
    const triangleHeight =  getValueFromInputField('triangle-height');
     // triangle are a
@@ -26,7 +26,7 @@ function calculateARea(){
 
 // calculate Rectangle area
 
-function calculateARea(){
+function rectangleCalculateARea(){
     const rectangleBase = getValueFromInputField('rectangle-base');
     const rectangleHeight =  getValueFromInputField('rectangle-height');
      // rectangle area 
